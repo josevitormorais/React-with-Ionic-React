@@ -24,6 +24,7 @@ import Search from "./pages/Tabs/Search";
 import Profile from "./pages/Tabs/Profile";
 import Submit from "./pages/Tabs/Submit";
 import Trending from "./pages/Tabs/Trending";
+import Link from "./pages/Link";
 
 import SignUp from "./pages/Auth/SignUp";
 import EditProfile from "./pages/Auth/EditProfile";
@@ -73,6 +74,7 @@ const App = () => {
               <Route path="/register" component={SignUp} />
               <Route path="/login" component={Login} />
               <Route path="/forgot" component={Forgot} />
+              <Route path="/link/:linkId" component={Link} />
               <Route component={() => <Redirect to="/news" />} />
             </IonRouterOutlet>
             <IonTabBar slot="bottom">
