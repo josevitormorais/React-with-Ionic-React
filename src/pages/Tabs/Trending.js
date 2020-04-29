@@ -1,14 +1,17 @@
 import React from "react";
-import { IonPage, IonHeader, IonToolbar, IonTitle } from "@ionic/react";
+import { IonPage, IonContent } from "@ionic/react";
+import SmallHeader from "../../components/Header/SmallHeader";
+import LargeHeader from "../../components/Header/LargeHeader";
+import LinkList from "../../components/Link/LinkList";
 
-const Trending = () => {
+const Trending = (props) => {
   return (
     <IonPage>
-      <IonHeader>
-        <IonToolbar>
-          <IonTitle>Trending</IonTitle>
-        </IonToolbar>
-      </IonHeader>
+      <SmallHeader title="Trending" />
+      <IonContent fullscreen>
+        <LargeHeader title="Newsy" />
+        <LinkList location={props.location} />
+      </IonContent>
     </IonPage>
   );
 };
