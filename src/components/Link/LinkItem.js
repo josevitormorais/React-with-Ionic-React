@@ -14,8 +14,6 @@ import {
   chevronBackCircleOutline,
   personCircleOutline,
   timeOutline,
-  chatbubble,
-  chatbubbleEllipses,
   chatbubbleEllipsesOutline,
 } from "ionicons/icons";
 import { getHostName } from "../../helpers/domain";
